@@ -1,0 +1,42 @@
+<EmploymentHistory>
+  <EmployerOrg>
+    <EmployerOrgName>Technical Difference</EmployerOrgName>
+    <PositionHistory positionType="directHire" currentEmployer="false">
+      <Title>Director of Web Applications Development</Title>
+      <OrgName>
+        <OrganizationName>Technical Difference</OrganizationName>
+      </OrgName>
+      <OrgInfo>
+        <PositionLocation type="undefined">
+          <CountryCode>US</CountryCode>
+          <Region>CA</Region>
+          <Municipality>Encinitas</Municipality>
+        </PositionLocation>
+      </OrgInfo>
+      <Description />
+      <StartDate>
+        <YearMonth>2004-10</YearMonth>
+      </StartDate>
+      <EndDate>
+        <YearMonth>2013-4</YearMonth>
+      </EndDate>
+      <JobCategory>
+        <TaxonomyName>DEPARTMENT</TaxonomyName>
+        <CategoryCode>196</CategoryCode>
+      </JobCategory>
+      <JobCategory>
+        <TaxonomyName>JOBCATEGORY</TaxonomyName>
+        <CategoryCode>Executive (VP, Dept Head)</CategoryCode>
+      </JobCategory>
+      <UserArea>
+        <sov:PositionHistoryUserArea>
+          <sov:Id>POS-1</sov:Id>
+          <sov:CompanyNameProbability>27</sov:CompanyNameProbability>
+          <sov:PositionTitleProbability>34</sov:PositionTitleProbability>
+          <sov:OffsetOfFarthestDataFound>98</sov:OffsetOfFarthestDataFound>
+          <sov:NumberOfEmployeesSupervised>15</sov:NumberOfEmployeesSupervised>
+        </sov:PositionHistoryUserArea>
+      </UserArea>
+    </PositionHistory>
+  </EmployerOrg>
+</EmploymentHistory>

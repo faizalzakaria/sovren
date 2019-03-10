@@ -28,7 +28,7 @@ describe Sovren::Employment do
       Then { result.first.current_employer == true }
       Then { result.first.current_employer? == true }
     end
-    
+
     context "a sparse resume" do
       Given(:raw_employment_xml) { File.read(File.expand_path(File.dirname(__FILE__) + '/../support/employment_sparse.xml')) }
       Given(:employment_xml) { Nokogiri::XML.parse(raw_employment_xml) }
@@ -40,6 +40,16 @@ describe Sovren::Employment do
       Then { result.first.title == "Director of Web Applications Development" }
       Then { result.first.current_employer? == false }
     end
-  end
 
+    context "with YearMonth date" do
+      Given(:raw_employment_xml) { File.read(File.expand_path(File.dirname(__FILE__) + '/../support/employment_year_month_date.xml')) }
+      Given(:employment_xml) { Nokogiri::XML.parse(raw_employment_xml) }
+
+      When(:result) { Sovren::Employment.parse(employment_xml) }
+
+      Then { result.length == 1 }
+      Then { result.first.start_date == Date.new(2004, 10, 01) }
+      Then { result.first.end_date == Date.new(2013, 04, 01) }
+    end
+  end
 end

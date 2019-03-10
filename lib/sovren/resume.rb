@@ -21,7 +21,7 @@ module Sovren
       resume.patent_history = Patent.parse(parsed_resume.css('PatentHistory').first)
       resume.publication_history = Publication.parse(parsed_resume.css('PublicationHistory').first)
       resume.references = Reference.parse(parsed_resume.css('References').first)
-      resume.experience_summary = ExperienceSummary.parse(parsed_resume.css('sov|ExperienceSummary').first)     
+      resume.experience_summary = ExperienceSummary.parse(parsed_resume.css('sov|ExperienceSummary').first)
       resume
     end
   end
